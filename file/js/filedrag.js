@@ -78,7 +78,7 @@ Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
 
 			// start upload
 			xhr.open("POST", "upload.php?fname="+file.webkitRelativePath, true);
-			xhr.setRequestHeader("X_FILENAME", file.name);
+			xhr.setRequestHeader("X-FILENAME", file.name);
 			xhr.send(file);
 
 		}
